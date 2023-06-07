@@ -21,6 +21,11 @@ class AccountsController < ApplicationController
   def edit
   end
 
+# Updates the account record. Requires the account and account_params arguments. 
+# account_params contains the permitted account attributes.
+  def update
+  end
+
   private
 
   sig { returns Account }
