@@ -17,6 +17,10 @@ class AccountsController < ApplicationController
     render locals: { account:, posts: }
   end
 
+# Renders the edit account form. Requires the account argument.
+  def edit
+  end
+
   private
 
   sig { returns Account }
