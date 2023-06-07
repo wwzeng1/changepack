@@ -12,6 +12,7 @@ class AccountsController < ApplicationController
     authorize! and redirect_to current_account
   end
 
+  # Renders the account profile page. Requires the account argument.
   def show
     render locals: { account:, posts: }
   end
