@@ -7,7 +7,7 @@ class AccountsController < ApplicationController
 
   visited :account
 
-  # Redirects to the current user's account
+# Redirects to the current user's account
   def index
     authorize! and redirect_to current_account
   end
