@@ -7,12 +7,23 @@ class AccountsController < ApplicationController
 
   visited :account
 
+# Redirects to the current user's account
   def index
     authorize! and redirect_to current_account
   end
 
+# Renders the account profile page. Requires the account argument.
   def show
     render locals: { account:, posts: }
+  end
+
+# Renders the edit account form. Requires the account argument.
+  def edit
+  end
+
+# Updates the account record. Requires the account and account_params arguments. 
+# account_params contains the permitted account attributes.
+  def update
   end
 
   private
